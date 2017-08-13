@@ -11,14 +11,14 @@ if [ $# -ne 0 ]; then
 
 		name=$1;
 
-		# assumes that test files have ...Tests.js in them
-		if [[ -f $name && $name =~ .*Tests.js.* ]]; then
+		# test files are JS files
+		if [[ -f $name && $name =~ .*.js.* ]]; then
   			 sed -i '' 's/describe.only/describe/' $1
   			 sed -i '' 's/it.only/it/' $1
 
   		elif [[ -d $name ]]; then
   			cd $name
-  			find ./ -type f -name '*Tests.js' -exec sed -i '' 's/describe.only/describe/' {} \; -exec sed -i '' 's/it.only/it/' {} \;
+  			find ./ -type f -name '*.js' -exec sed -i '' 's/describe.only/describe/' {} \; -exec sed -i '' 's/it.only/it/' {} \;
 
   		else
   			echo "This does not seem like a test file or directory..."
