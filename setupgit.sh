@@ -1,5 +1,6 @@
 # does all of the commands for initializing a git repo
-# usage: ./setupgit.sh repo_name (can alias)
+# usage: ./setupgit.sh repo_name -p(can alias)
+# if the -p optionis given it pushes it up also
 
 GIT_STR='https://github.com/rohan-varma/'
 GIT_END='.git'
@@ -13,5 +14,10 @@ else
 	git add .
 	git commit -m "commit"
 	git remote add origin $GIT_STR$1$GIT_END
-	git push -u origin master
+	if [[ $2 == "-p" ]]; then
+		echo "push command given"
+		#git push -u origin master
+	else
+		echo "no push!"
+	fi
 fi
