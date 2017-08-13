@@ -1,3 +1,3 @@
 ### Scripts
 
-Scripts to automate tedious tasks / do random things faster / productivity
+Scripts to automate tedious tasks / do things faster / productivity
