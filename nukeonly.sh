@@ -26,5 +26,5 @@ if [ $# -ne 0 ]; then
   			exit 1
 		fi
 else
-	find ./ -type f -name '*Tests.js' -exec sed -i '' 's/describe.only/describe/' {} \; -exec sed -i '' 's/it.only/it/' {} \; 
+	find ./ -type f -name '*.js' -exec sed -i '' 's/describe.only/describe/' {} \; -exec sed -i '' 's/it.only/it/' {} \; 
 fi
