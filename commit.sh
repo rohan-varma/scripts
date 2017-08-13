@@ -3,6 +3,8 @@ if [ $# -eq 0 ]; then
     echo "Usage: ./commit.sh COMMIT_MSG (can alias)"
 else
     git add .
+    $COMMIT_MSG=$1
+    echo $COMMIT_MSG
     git commit -m $1
     git push
 fi
