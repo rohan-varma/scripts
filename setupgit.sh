@@ -13,4 +13,5 @@ else
 	git add .
 	git commit -m "commit"
 	git remote add origin $GIT_STR$1$GIT_END
+	git push -u origin master
 fi
