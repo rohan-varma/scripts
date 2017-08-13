@@ -16,7 +16,7 @@ else
 	git remote add origin $GIT_STR$1$GIT_END
 	if [[ $2 == "-p" ]]; then
 		echo "push command given"
-		#git push -u origin master
+		git push -u origin master
 	else
 		echo "no push!"
 	fi
