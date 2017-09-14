@@ -11,6 +11,7 @@ else
 	echo $1
 	git init
 	touch README.md
+	echo "$1" > README.md
 	git add .
 	git commit -m "commit"
 	git remote add origin $GIT_STR$1$GIT_END
