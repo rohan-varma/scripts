@@ -9,7 +9,7 @@ if [ $# -eq 0 ]; then
 	exit 0
 else
 	git init
-	echo "$1" > README.md
+	echo "### $1" > README.md
 	git add .
 	git commit -m "commit"
 	git remote add origin $GIT_STR$1$GIT_END
