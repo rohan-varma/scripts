@@ -13,3 +13,5 @@ nukeonly.sh: Removes all occurences of describe.only and it.only in a javascript
 doubledollar.py: For a given file, reformats math formatting of the form $ _equation_ $ to $$ _equation_ $$ because Jupyter supports the former but Github-flavored markdown only supports the latter
 
 s2nb.py: Converts a python script to a Jupyter Notebook
+
+typora.sh: Opens up the typora editor with a specified filename (creating the file if it doesn't exist)
