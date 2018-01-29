@@ -14,7 +14,7 @@
 			current_group.push(button)
 		} else {
 			//check it
-			button.checked = true;
+			button.checked = true
 			if (current_group[current_group.length - 1].checked) {
 				//if its still checked, its independent
 				groups.push(current_group)
