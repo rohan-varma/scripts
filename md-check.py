@@ -12,12 +12,15 @@ if __name__ == '__main__':
 		with open(fname) as f:
 			lines = f.read()
 		i = 0
+
 		while i < len(lines):
-			if lines[i] == BAR or (i + len(VERT) < len(lines) and lines[i:i+len(VERT)] == VERT):
+			bar_flag = lines[i] == BAR
+			vert_flag = i + len(VERT) < len(lines) and lines[i:i+len(VERT)] == VERT
+			if bar_flag or vert_flag:
 				out+="\\mid"
 				print(lines[i])
 				diffs+=1
-				if i + len(VERT) < len(lines) and lines[i:i+len(VERT)] == VERT:
+				if vert_flag:
 					i+=len(VERT)
 			else:
 				out+=lines[i]
