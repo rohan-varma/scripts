@@ -7,6 +7,7 @@ if __name__ == '__main__':
 	diffs = 0
 	if len(sys.argv) != 2:
 		print('USAGE: python3 md-check.py [FILENAME]')
+		exit(1)
 	else:
 		fname = sys.argv[1]
 		with open(fname) as f:
