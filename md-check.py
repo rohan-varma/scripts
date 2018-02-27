@@ -19,7 +19,10 @@ if __name__ == '__main__':
 			vert_flag = i + len(VERT) < len(lines) and lines[i:i+len(VERT)] == VERT
 			if bar_flag or vert_flag:
 				out+="\\mid"
-				print(lines[i])
+				if bar_flag:
+					print(lines[i])
+				elif vert_flag:
+					print(lines[i:i+len(VERT)])
 				diffs+=1
 				if vert_flag:
 					i+=len(VERT)
