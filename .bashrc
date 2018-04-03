@@ -1,1 +1,1 @@
-/Users/rohan/.bashrc
+alias gs='git status'
