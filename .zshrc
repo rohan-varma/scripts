@@ -135,13 +135,5 @@ alias typora='~/desktop/scripts/typora.sh'
 alias uclascp='~/desktop/scripts/uclascp.sh'
 alias mdcheck='python3 ~/desktop/scripts/md-check.py'
 alias topdf='~/desktop/scripts/pdf.sh'
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 alias acmbox="ssh acm@131.179.54.92"
 alias acmscp='~/desktop/scripts/acmscp.sh'
-source /Users/rohan/Desktop/CS-118-P2/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/rohan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/rohan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/rohan/Desktop/winter18/239/project/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/rohan/Desktop/winter18/239/project/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/rohan/Desktop/machine-learning/nn-demos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
