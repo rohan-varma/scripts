@@ -135,13 +135,15 @@ alias typora='~/desktop/scripts/typora.sh'
 alias uclascp='~/desktop/scripts/uclascp.sh'
 alias mdcheck='python3 ~/desktop/scripts/md-check.py'
 alias topdf='~/desktop/scripts/pdf.sh'
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 alias acmbox="ssh acm@131.179.54.92"
 alias acmscp='~/desktop/scripts/acmscp.sh'
-source /Users/rohan/Desktop/CS-118-P2/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/rohan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/rohan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/rohan/Desktop/winter18/239/project/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/rohan/Desktop/winter18/239/project/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/rohan/Desktop/machine-learning/nn-demos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+alias python3='/usr/local/bin/python3'
+alias pip3='pip3.6'
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/rohan/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/rohan/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/rohan/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/rohan/google-cloud-sdk/completion.zsh.inc'; fi
+alias gp='gprolog'
+alias ssh136='ssh la136ew@users.isi.deterlab.net'
+alias spotify='open /Applications/Spotify.app'
