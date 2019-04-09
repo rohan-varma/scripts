@@ -147,3 +147,4 @@ if [ -f '/Users/rohan/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/roh
 alias gp='gprolog'
 alias ssh136='ssh la136ew@users.isi.deterlab.net'
 alias spotify='open /Applications/Spotify.app'
+alias uclassh='ssh lnxsrv09.seas.ucla.edu'

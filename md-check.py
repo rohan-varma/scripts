@@ -30,7 +30,10 @@ if __name__ == '__main__':
 				out+=lines[i]
 			i+=1
 	print("found {} diffs".format(diffs))
+	new_file_name = sys.argv[1][:-3] + "-formatted.md"
+
+	print('writing modified file to {}'.format(new_file_name))
 	if diffs:
-		with open(sys.argv[1][:-3] + "-formatted.md", "w+") as f:
+		with open(new_file_name, "w+") as f:
 			f.write(out)
 
