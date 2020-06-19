@@ -13,4 +13,8 @@ set shiftwidth=4
 set softtabstop=4
 syntax on
 set background=dark
-
+"shortcut for deleting lines"
+:map - dd
+"emacs muscle memory rip"
+:map <c-a> 0
+:map <c-e> $
