@@ -28,7 +28,7 @@ Some tips for using vim!
 
 **How to add a character to the beginning of sequential lines**
 
-- <C-v> for visual block mode
+- Press Control V for visual block mode
 - Select lines that you want to modify
 - Shift + i and type the text
 - CapsLk, after 1s the inserted text will appear everywhere.
