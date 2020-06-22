@@ -34,3 +34,6 @@ Some tips for using vim!
 - CapsLk, after 1s the inserted text will appear everywhere.
 - from https://stackoverflow.com/questions/253380/how-to-insert-text-at-beginning-of-a-multi-line-selection-in-vi-vim/253391#253391
 
+** Key repeat stuff **
+- First, sys preferences -> keyboard -> enable key repeat, fast, short time until detection
+- VSCode vim: run this command defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
