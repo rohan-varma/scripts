@@ -36,4 +36,34 @@ Some tips for using vim!
 
 ** Key repeat stuff **
 - First, sys preferences -> keyboard -> enable key repeat, fast, short time until detection
+
 - VSCode vim: run this command defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
+- VSCode vim: allow vimrc keybinds to work with VSCode vim
+
+  - Need to add them into your settings.json
+
+  - Mine is at /Users/rvarm1/Library/Application Support/VSCode /User/settings.json
+
+  - Add the following:
+
+    ```
+    "vim.insertModeKeyBindings": [
+            // {
+            //     "before": ["j", "j"],
+            //     "after": ["<esc>"]
+            // },
+            {
+                "before": ["<c-a>"],
+                "after": ["<esc>", "0", "i"]
+            },
+            {
+                "before": ["<c-e>"],
+                "after": ["<esc>", "$", "a"]
+            }
+       ],
+    ```
+
+    the ctrl + a will take you to the beginning of the line and put you in insert mode, the ctrl + e will take you to the end of the line and put you in insert mode
+
+    you should also be able to find this settings.json file and edit it from searching for it within VSCode itself.
