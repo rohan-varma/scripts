@@ -1,0 +1,26 @@
+"vim.insertModeKeyBindings": [
+        // {
+        //     "before": ["j", "j"],
+        //     "after": ["<esc>"]
+        // },
+        // Goes to the beginnning of the line in insert mode
+        {
+            "before": ["<c-a>"],
+            "after": ["<esc>", "0", "i"]
+        },
+        // Goes to the end of the line in insert mode
+        {
+            "before": ["<c-e>"],
+            "after": ["<esc>", "$", "a"]
+        },
+        // Not sure what this does.
+        {
+            "before": ["<D-c>"],
+            "after": ["y"],
+        },
+        // Control + k delete of the current line.
+        {
+            "before": ["<c-k>"],
+            "after": ["<esc>", "d", "d", "O"],
+        },
+   ],

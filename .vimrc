@@ -4,6 +4,7 @@ filetype plugin indent on
 set tabstop=4
 
 set shiftwidth=4
+set textwidth=200
 syntax on
 filetype indent plugin on
 set modeline
