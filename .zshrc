@@ -6,10 +6,10 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
 
 # added by Anaconda 2.3.0 installer
-export PATH="/Users/rohan/anaconda/bin:$PATH"
+export PATH="/Users/rvarm1/anaconda/bin:$PATH"
 
 ##
-# Your previous /Users/rohan/.bash_profile file was backed up as /Users/rohan/.bash_profile.macports-saved_2016-05-14_at_16:36:40
+# Your previous /Users/rvarm1/.bash_profile file was backed up as /Users/rvarm1/.bash_profile.macports-saved_2016-05-14_at_16:36:40
 ##
 
 # MacPorts Installer addition on 2016-05-14_at_16:36:40: adding an appropriate PATH variable for use with MacPorts.
@@ -17,7 +17,7 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/rohan/.oh-my-zsh
+export ZSH=/Users/rvarm1/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -107,15 +107,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias encouragement='echo rohan you are awesome'
+alias encouragement='echo rvarm1 you are awesome'
 alias gs='git status'
 alias gb='git branch'
 alias gp='git pull'
 alias gmm='git merge master'
 alias jb='jupyter notebook'
-alias python='python3'
-alias pip='pip3'
-alias py='python3'
 alias cdml='cd ~/desktop/machine-learning'
 alias em='emacs'
 alias cdd='cd ~/desktop'
@@ -136,18 +133,88 @@ alias uclascp='~/desktop/scripts/uclascp.sh'
 alias mdcheck='python3 ~/desktop/scripts/md-check.py'
 alias topdf='~/desktop/scripts/pdf.sh'
 alias acmbox="ssh acm@131.179.54.92"
+alias autopep8='/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/autopep8.py'
 alias acmscp='~/desktop/scripts/acmscp.sh'
-alias python3='/usr/local/bin/python3'
-alias pip3='pip3.6'
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/rohan/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/rohan/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/rvarm1/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/rvarm1/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/rohan/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/rohan/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/rvarm1/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/rvarm1/google-cloud-sdk/completion.zsh.inc'; fi
 alias gp='gprolog'
 alias ssh136='ssh la136ew@users.isi.deterlab.net'
 alias spotify='open /Applications/Spotify.app'
 alias uclassh='ssh lnxsrv09.seas.ucla.edu'
 alias pyformat='autopep8 --in-place --aggressive --aggressive'
-alias message='/Users/rohan/desktop/scripts/message.sh'
-alias format='/Users/rohan/desktop/scripts/format.sh'
+alias message='/Users/rvarm1/desktop/scripts/message.sh'
+alias format='/Users/rvarm1/desktop/scripts/format.sh'
+alias subl2='sublime'
+
+alias python='python3.7'
+alias python3='python3.7'
+alias pip='pip3'
+alias getpytorchnightly='pip install numpy ; pip install --pre torch torchvision -f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html --upgrade'
+alias p='python'
+export PATH="/usr/local/opt/protobuf@3.7/bin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/rvarm1/local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/rvarm1/local/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/rvarm1/local/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/rvarm1/local/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+alias pytohon=python
+alias potyhon=python
+alias ortgpm=python
+alias pythn=python
+alias pytohn=python
+alias pyton=python
+alias ptyhon=python
+alias oython=python
+
+alias subl='sublime'
+HISTSIZE=130000 SAVEHIST=130000
+# PROMPT
+
+# default macOS prompt is: \h:\W \u\$
+
+# assemble the prompt string PS1
+# inspired from: https://stackoverflow.com/a/16715681
+function __build_prompt {
+    local EXIT="$?" # store current exit code
+    
+    # define some colors
+    local RESET='\[\e[0m\]'
+    local RED='\[\e[0;31m\]'
+    local GREEN='\[\e[0;32m\]'
+    local BOLD_GRAY='\[\e[1;30m\]'
+    # longer list of codes here: https://unix.stackexchange.com/a/124408
+    
+    # start with an empty PS1
+    PS1=""
+
+    if [[ $EXIT -eq 0 ]]; then
+        PS1+="${GREEN}√${RESET} "      # Add green for success
+    else
+        PS1+="${RED}?️️️${EXIT}${RESET} " # Add red if exit code non 0
+    fi
+    # this is the default prompt for 
+    PS1+="${BOLD_GRAY}\W ${RESET}\$ "
+}
+
+# set the prompt command
+# include previous values to maintain Apple Terminal support (window title path and sessions)
+# this is explained in /etc/bashrc_Apple_Terminal
+PROMPT_COMMAND="__build_prompt${PROMPT_COMMAND:+; $PROMPT_COMMAND}"
+
+alias checkout='~/utils/script.sh'
+set -o vi # enable vim command line
+alias v="vim"
+alias gp='git push'
