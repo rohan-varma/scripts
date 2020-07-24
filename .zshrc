@@ -218,3 +218,5 @@ alias checkout='~/utils/script.sh'
 set -o vi # enable vim command line
 alias v="vim"
 alias gp='git push'
+bindkey -v
+bindkey '^R' history-incremental-search-backward
