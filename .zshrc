@@ -218,5 +218,10 @@ alias checkout='~/utils/script.sh'
 set -o vi # enable vim command line
 alias v="vim"
 alias gp='git push'
+# https://unix.stackexchange.com/questions/30168/how-to-enable-reverse-search-in-zsh
 bindkey -v
 bindkey '^R' history-incremental-search-backward
+
+alias cdscratch='cd ~/scratch'
+alias scratch='cd ~/scratch'
+
