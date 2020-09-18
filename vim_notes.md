@@ -68,3 +68,10 @@ Some tips for using vim!
     the ctrl + a will take you to the beginning of the line and put you in insert mode, the ctrl + e will take you to the end of the line and put you in insert mode
 
     you should also be able to find this settings.json file and edit it from searching for it within VSCode itself.
+    
+    
+    
+    
+#### How to find and replace
+
+;%s/string_to_find/string_to_replace/g will do it in the whole file. 
