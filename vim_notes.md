@@ -75,3 +75,11 @@ Some tips for using vim!
 #### How to find and replace
 
 ;%s/string_to_find/string_to_replace/g will do it in the whole file. 
+
+#### View last command in vim
+ctrl p + colon
+
+#### Another find and replace example
+:%s/\".\/data\"/FOO_PATH/g
+
+will replace "./data" with FOO_PATH everywhere. Remember that \ escapes the next character so it is treated as literally. 
