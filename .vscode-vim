@@ -1,3 +1,4 @@
+// To edit this file in VSCode, just command + shift + p, and open settings (JSON), and add this json in order to configure vi key bindings for vs code. 
 "vim.insertModeKeyBindings": [
         // {
         //     "before": ["j", "j"],
