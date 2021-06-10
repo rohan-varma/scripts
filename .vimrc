@@ -20,3 +20,6 @@ set background=dark
 "emacs muscle memory rip"
 :map <c-a> 0
 :map <c-e> $
+" removes trailing whitespace"
+:nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
