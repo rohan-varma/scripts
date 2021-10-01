@@ -1,6 +1,7 @@
 // Place your key bindings in this file to override the defaults
 [
     {
+        // jumps to the right bracket
         "key": "ctrl+m",
         "command": "editor.action.jumpToBracket",
         "when": "editorTextFocus"
@@ -21,12 +22,14 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
+        // focus VSCode terminal
         "key": "ctrl+t",
         "command": "workbench.action.terminal.focus",
         // "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
         "key": "ctrl+e",
+        // go back from terminal to code editor
         "command": "workbench.action.focusActiveEditorGroup",
     },
     {
@@ -40,11 +43,13 @@
         "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
+        // go right into next code editor
         "key": "ctrl+[",
         "command": "workbench.action.navigateEditorGroups"
     },
     {
         "key": "ctrl+]",
+        // go left code editor
         "command": "workbench.action.navigateEditorGroups"
     },
 
