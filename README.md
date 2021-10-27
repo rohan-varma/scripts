@@ -15,3 +15,6 @@ doubledollar.py: For a given file, reformats math formatting of the form $ _equa
 s2nb.py: Converts a python script to a Jupyter Notebook
 
 typora.sh: Opens up the typora editor with a specified filename (creating the file if it doesn't exist)
+
+
+how to enable key repeat with vim: https://gist.github.com/kconragan/2510186
